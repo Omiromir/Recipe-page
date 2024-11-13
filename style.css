@@ -1,0 +1,144 @@
+
+
+:root{
+    --White: hsl(0, 0%, 100%);
+
+
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: hsl(14, 45%, 36%);
+
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: "Young Serif";
+    src: local("Young Serif"),
+      url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: local("Outfit"),
+      url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400 600 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+body {
+    font-family: "Outfit", serif;
+    font-size: 16px;
+    color: var(--Stone-600);
+    background-color: var(--Stone-150);
+    line-height: 150%;
+    margin: 0;
+}
+
+section {
+    border-bottom: 1px solid var(--Stone-100);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1,h2,h3 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    color: var(--Stone-900);
+    margin-top: 48px;
+}
+
+span {
+    font-weight: 600;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid var(--Stone-100);
+}
+
+td {
+    padding: 16px 24px; 
+}
+
+td:last-child {
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+
+
+ul li::marker,
+ol li::marker {
+    color: var(--Brown-800);
+    font-weight: 700;
+}
+
+li {
+    margin-bottom: 16px;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--White);
+}
+
+.section__title {
+    color: var(--Brown-800);
+}
+
+.header__descr {
+    margin-bottom: 32px;
+}
+
+.preparation__wrapper {
+    padding: 10px 24px;
+    background-color: var(--Rose-50);
+    border-radius: 10px;
+}
+
+.preparation__title {
+    margin-top: 10px;
+    font-family: "Outfit";
+    font-weight: 700;
+    color: var(--Rose-800);
+}
+
+.preparation__list li::marker {
+    color: var(--Rose-800);
+}
+
+
+@media (max-width: 375px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 32px;
+    } 
+
+    .recipe__wrapper {
+        padding: 0 40px;
+    }
+}
+
