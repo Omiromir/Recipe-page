@@ -92,6 +92,7 @@ ol li::marker {
 }
 
 li {
+    padding-left: 23px;
     margin-bottom: 16px;
 }
 
